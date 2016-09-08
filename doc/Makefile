@@ -2,9 +2,9 @@
 #
 
 # You can set these variables from the command line.
-PYTHON        ?= python3
+PYTHON        ?= python
 SPHINXOPTS    ?= -j 1
-SPHINXBUILD   ?= python3 /Users/ferradans/anaconda3/bin/sphinx-build #$(shell which sphinx-build)
+SPHINXBUILD   ?= python $(shell which sphinx-build)
 SPHINXCACHE   ?= build/doctrees
 PAPER         ?=
 
@@ -15,7 +15,7 @@ ALLSPHINXOPTS   = -d $(SPHINXCACHE) $(PAPEROPT_$(PAPER)) $(SPHINXOPTS) source
 DEST = build
 .PHONY: all help clean html dirhtml pickle json htmlhelp qthelp latex changes linkcheck doctest gitwash gh-pages release_notes
 
-all: html
+all: htmla
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
